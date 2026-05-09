@@ -1,14 +1,12 @@
 package Day4;
 
-import java.util.Random;
-
 public class EmployeeWage {
 
     public static void main(String[] args) {
 
-        Random random = new Random();
+        System.out.println("Welcome to Employee Wage Computation Program");
 
-        int attendance = random.nextInt(3);
+        int attendance = (int) (Math.random() * 3);
 
         if (attendance == 1) {
 
@@ -60,4 +58,3 @@ class PartTimeEmployee {
         System.out.println("Daily Wage : " + dailyWage);
     }
 }
-
