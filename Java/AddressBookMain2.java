@@ -212,18 +212,14 @@ public class AddressBookMain2 {
 
           break;
 
-        // UC3
         case 4:
 
           scan.nextLine();
-
           System.out.print("Enter Address Book Name: ");
           String editBook = scan.nextLine();
-
           AddressBook editAddressBook = addressBook.get(editBook);
 
           if (editAddressBook == null) {
-
             System.out.println("Address Book Not Found!");
             break;
           }
