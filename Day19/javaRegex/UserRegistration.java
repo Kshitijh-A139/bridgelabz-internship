@@ -6,15 +6,12 @@ import java.util.regex.Pattern;
 public class UserRegistration {
 
     static Scanner sc = new Scanner(System.in);
-
-    // Regex Patterns
     static String firstNameRegex = "^[A-Z][a-z]{2,}$";
     static String lastNameRegex = "^[A-Z][a-z]{2,}$";
     static String emailRegex = "^[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)?@[a-zA-Z]+\\.[a-zA-Z]+(\\.[a-zA-Z]+)?$";
     static String mobileRegex = "^[0-9]{2}\\s[0-9]{10}$";
     static String passwordRegex = "^(?=.*[A-Z])(?=.*[0-9])(?=[^@#$%^&+=]*[@#$%^&+=][^@#$%^&+=]*$).{8,}$";
 
-    // Common Validation Method
     static String validate(String message, String regex, String error) {
         while (true) {
             System.out.print(message);
@@ -42,7 +39,6 @@ public class UserRegistration {
         );
 
         System.out.println("\nRegistration Successful");
-
         System.out.println("First Name: " + firstName);
         System.out.println("Last Name: " + lastName);
         System.out.println("Email: " + email);
